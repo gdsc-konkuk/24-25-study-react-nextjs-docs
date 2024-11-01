@@ -1,0 +1,5 @@
+- 웹페이지 순서 : www -> SSR -> AJAX -> React -> Next.js & Hybrid
+  - SSG : 빌드 시점에 페이지를 미리 생성.
+  - SSR : 사용자가 서버에 요청을 할 때마다 동적으로 생성.
+  - Hydration : 서버에서 생성된 HTML을 활성화.
+  - Streaming : 컴포넌트별로 비동기적으로 전달하여, 중요한 부분이 먼저 렌더링 될 수 있도록 한다.
