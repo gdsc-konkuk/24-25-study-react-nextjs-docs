@@ -3,8 +3,10 @@
 ### Reading
 
 - trouble shooting
+  
     
     ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/05918415-3f0e-4564-bed2-99de1628a020/a150b8b7-609b-4353-a46d-4fd483c8584f/image.png)
+
     
 - 준필 : 왜 React의 hook은 객체가 아닌 배열을 반환하는가?
     - 모두의 결론 : 가독성과 편의성
