@@ -1,10 +1,10 @@
+# 2주차(11/15) State
+
 ### Reading
 
 - trouble shooting
     
-    ![useState 처음 사용했을 때 2번 트러블슈팅에 젤 애먹었던 기억](https://prod-files-secure.s3.us-west-2.amazonaws.com/05918415-3f0e-4564-bed2-99de1628a020/a150b8b7-609b-4353-a46d-4fd483c8584f/image.png)
-    
-    useState 처음 사용했을 때 2번 트러블슈팅에 젤 애먹었던 기억
+    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/05918415-3f0e-4564-bed2-99de1628a020/a150b8b7-609b-4353-a46d-4fd483c8584f/image.png)
     
 - 준필 : 왜 React의 hook은 객체가 아닌 배열을 반환하는가?
     - 모두의 결론 : 가독성과 편의성
