@@ -5,7 +5,8 @@
 - trouble shooting
   
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/05918415-3f0e-4564-bed2-99de1628a020/a150b8b7-609b-4353-a46d-4fd483c8584f/image.png)
+    <img width="567" alt="image" src="https://github.com/user-attachments/assets/b4a95813-e433-4528-9b84-d4329653a0f8">
+
 
     
 - 준필 : 왜 React의 hook은 객체가 아닌 배열을 반환하는가?
