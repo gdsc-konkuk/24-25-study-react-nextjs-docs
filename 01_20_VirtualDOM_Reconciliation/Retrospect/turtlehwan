@@ -1,0 +1,21 @@
+- virtual dom 이라는 용어는 원래 react에서 제시되어 있지 않고, 오해를 불러오기 때문에 사용하지 말자는 주장도 있음
+- https://svelte.dev/blog/virtual-dom-is-pure-overhead
+    - 실제로는 DOM 보다 성능이 낮음.
+    - 실제 DOM 접근 횟수를 줄이기 위해서, 크로스 플랫폼을 위해, 상태 중심의 선언적 UI 개발을 위해 도입된 것이 Virtual DOM 이다.
+- svelte는 virtual dom 대신 컴파일러를 도입.
+- 리액트도 컴파일러 도입? → virtual dom 사라질수도?
+
+- render phase / commit phase
+    - 트리를 타고 가면서 fiber 생성하고, 다시 타고 올라오면서 fiber done
+
+- **useSyncExternalStore**
+    - useEffect가 느려서
+    - useEffect 같은 side effect 처리를 위한 것은 commit phase에 속해서 시작 시점이 느리다.
+    - 이때 일시중단하고 다른 render로 갔다가 왔을 때 commit에서 업데이트가 안 될 가능성이 있다.
+
+- useState 훅에서 setState를 사용할 때 prev 내부 콜백을 호출하는 이유도 phase 간 간극을 메워 최신화 값 제공하기 위함.
+
+- reconcilation → 이걸 최적화하기 위해 fiber 도입
+- offsetWidth → reflow 발생 가능성
+
+- 전문가를 위한 리액트 책 추천
