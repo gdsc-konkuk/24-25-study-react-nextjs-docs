@@ -1,0 +1,19 @@
+DOM(Document Object Model) : Html 문서를 자바스크립트로 변경하여 조작할 수 있도록 함.
+- Virtual DOM : real DOM을 가볍게 copy하여 변경된 부분만 수정할 수 있도록 함. (reconcilation)
+  - Fiber, React Element 등을 최적화 하여 마지막에 한꺼번에 렌더링할 수 있도록 하는 버퍼.
+  - 사용 이유 : DOM API에 접근해야 하는 과정을 최소한으로 줄일 수 있다.
+    - reflow는 무거운 과정이다. (DOM API를 접근하는 것은 굉장히 비싼 과정이다.)
+  - react Element 생성 -> Fiber 생성.
+  - 방식 : Diff.
+    - 태그가 바뀐 것이 있으면, 하위 트리에 대한 검증을 하지 않고 바뀐 트리 그대로 복붙.
+    - 같은 요소가 추가된 경우, key 값을 통해 확인. (key 값으로 index를 넣으면 안되는 이유)
+  - virtual DOM은 반드시 효율적인가?
+    - 그렇지 않다.
+    - 실제 DOM에 패치하는 과정에는 DOM API를 사용하므로 DOM API + diff 과정이 추가되어 있기 때문에 느리다.
+    - 그럼에도 DOM API 접근을 줄이기 위해 Virtual DOM을 사용한다.
+
+- 렌더링 처리
+  - Render phase
+    - useExternal
+  - Commit phase
+    - useEffect 실행. 훅 중에 느린 편.
